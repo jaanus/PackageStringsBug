@@ -22,6 +22,8 @@ Here’s what you see with both SwiftUI previews and snapshot tests.
 
 ![Mixed strings](doc/07-test-mixed.png)
 
-SwiftUI `Text` API loads the correct localization as expected. However, `NSLocalizedString` does not consider the locale that is passed in with SwiftUI environment, and loads the incorrect string. The behavior is the same in main app target and package.
+SwiftUI `Text` API loads the correct localization as expected. However, `NSLocalizedString` does not consider the locale that is passed in with SwiftUI environment, and loads the incorrect string.
 
-My expectation is that in the context of SwiftUI, either NSLocalizedString should work correctly, or there should be another API to load the localized string from the strings file, to do manipulation on it as needed. E.g imagine that NavigationTitle wasn’t a static string, but actually contained variables, and I would need to substitute those before passing it on to the navigation title API.
+The incorrect behavior is the same in main app target and package, and is similarly broken in both SwiftUI previews and snapshot tests.
+
+My expectation is that in the context of SwiftUI, either NSLocalizedString should work correctly, or there should be another API to load the correct localized string from the strings file, to do manipulation on it as needed. E.g imagine that NavigationTitle wasn’t a static string, but actually contained variables, and I would need to substitute those before passing it on to the navigation title API.
