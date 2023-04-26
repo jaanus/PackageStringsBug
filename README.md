@@ -27,3 +27,5 @@ SwiftUI `Text` API loads the correct localization as expected. However, `NSLocal
 The incorrect behavior is the same in main app target and package, and is similarly broken in both SwiftUI previews and snapshot tests.
 
 My expectation is that in the context of SwiftUI, either NSLocalizedString should work correctly, or there should be another API to load the correct localized string from the strings file, to do manipulation on it as needed. E.g imagine that NavigationTitle wasn’t a static string, but actually contained variables, and I would need to substitute those before passing it on to the navigation title API.
+
+Filed to Apple as FB12146083.
