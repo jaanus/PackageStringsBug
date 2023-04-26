@@ -12,6 +12,7 @@
 		EAA82C8429F93A19008382DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA82C8329F93A19008382DC /* Assets.xcassets */; };
 		EAA82C8729F93A19008382DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA82C8629F93A19008382DC /* Preview Assets.xcassets */; };
 		EAA82C9629F93B4D008382DC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAA82C9329F93B4D008382DC /* Localizable.strings */; };
+		EAA82C9B29F946F5008382DC /* Feature in Frameworks */ = {isa = PBXBuildFile; productRef = EAA82C9A29F946F5008382DC /* Feature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EAA82C8629F93A19008382DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAA82C9429F93B4D008382DC /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EAA82C9529F93B4D008382DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAA82C9829F944F8008382DC /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA82C9B29F946F5008382DC /* Feature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +41,10 @@
 		EAA82C7329F93A18008382DC = {
 			isa = PBXGroup;
 			children = (
+				EAA82C9829F944F8008382DC /* Feature */,
 				EAA82C7E29F93A18008382DC /* PackageStringsBug */,
 				EAA82C7D29F93A18008382DC /* Products */,
+				EAA82C9929F946F5008382DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +76,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EAA82C9929F946F5008382DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +99,9 @@
 			dependencies = (
 			);
 			name = PackageStringsBug;
+			packageProductDependencies = (
+				EAA82C9A29F946F5008382DC /* Feature */,
+			);
 			productName = PackageStringsBug;
 			productReference = EAA82C7C29F93A18008382DC /* PackageStringsBug.app */;
 			productType = "com.apple.product-type.application";
@@ -357,6 +372,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAA82C9A29F946F5008382DC /* Feature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Feature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAA82C7429F93A18008382DC /* Project object */;
 }

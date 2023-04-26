@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Feature
 
 struct ContentView: View {
   var body: some View {
@@ -15,6 +16,12 @@ struct ContentView: View {
           .imageScale(.large)
           .foregroundColor(.accentColor)
         Text("hello_world")
+        NavigationLink(
+          destination: {
+            FeatureView()
+          }, label: {
+            Text("button")
+          })
       }
       // Navigation title is incorrect in SwiftUI et-EE preview.
       // Even if you set the locale to et-EE, the string comes from English localization.
