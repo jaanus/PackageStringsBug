@@ -24,6 +24,7 @@
 		EAA82C9429F93B4D008382DC /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EAA82C9529F93B4D008382DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EAA82C9829F944F8008382DC /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
+		EAA82C9C29F94830008382DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		EAA82C7329F93A18008382DC = {
 			isa = PBXGroup;
 			children = (
+				EAA82C9C29F94830008382DC /* README.md */,
 				EAA82C9829F944F8008382DC /* Feature */,
 				EAA82C7E29F93A18008382DC /* PackageStringsBug */,
 				EAA82C7D29F93A18008382DC /* Products */,
